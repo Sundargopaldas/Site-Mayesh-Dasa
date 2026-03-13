@@ -46,12 +46,19 @@
                 <a href="#aula-experimental" class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-all transform hover:scale-105 shadow-md">Aula Experimental</a>
             </div>
 
-            <!-- Mobile Menu Toggle (Simplified) -->
+            <!-- Mobile Menu Toggle -->
             <div class="md:hidden">
-                <button class="text-indigo-800 focus:outline-none">
+                <button id="menu-toggle" class="text-indigo-800 focus:outline-none p-2">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#quem-sou" class="block text-lg font-medium text-slate-700 hover:text-indigo-600 transition-colors">Quem Sou</a>
+            <a href="#beneficios" class="block text-lg font-medium text-slate-700 hover:text-indigo-600 transition-colors">Benefícios do Yoga</a>
+            <a href="#aula-experimental" class="block text-center bg-indigo-600 text-white px-6 py-3 rounded-full font-bold hover:bg-indigo-700 transition-all">Aula Experimental</a>
         </div>
     </nav>
 
@@ -203,6 +210,22 @@
     </footer>
 
     <script>
+        // Mobile Menu Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
         // Smooth scroll adjustment for fixed navbar
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
