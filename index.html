@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayesh Dasa - Yoga Vibrante & Moderno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .vibrant-orange {
+            color: #ff7e5f;
+        }
+        .bg-vibrant-green {
+            background-color: #a8e063;
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="img/logo.jpeg" alt="Mayesh Dasa Logo" class="h-12 w-12 rounded-full object-cover shadow-lg border-2 border-white">
+                <span class="text-2xl font-bold tracking-tight text-indigo-800">Mayesh Dasa</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center font-medium">
+                <a href="#quem-sou" class="hover:text-indigo-600 transition-colors">Quem Sou</a>
+                <a href="#beneficios" class="hover:text-indigo-600 transition-colors">Benefícios do Yoga</a>
+                <a href="#aula-experimental" class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-all transform hover:scale-105 shadow-md">Aula Experimental</a>
+            </div>
+
+            <!-- Mobile Menu Toggle (Simplified) -->
+            <div class="md:hidden">
+                <button class="text-indigo-800 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="img/images.jpeg" alt="Yoga Background" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-100/30 to-slate-50"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 text-center z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-indigo-900 mb-6 animate-fade-in text-shadow">
+                Desperte sua <span class="text-indigo-600">Essência</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-indigo-800 mb-10 max-w-2xl mx-auto font-light">
+                Descubra o equilíbrio perfeito entre corpo, mente e alma com o Yoga moderno e vibrante de Mayesh Dasa.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#aula-experimental" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-indigo-700 transition-all shadow-xl hover:-translate-y-1">Comece Agora</a>
+                <a href="#quem-sou" class="bg-white text-indigo-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-slate-100 transition-all shadow-lg border border-indigo-100">Saiba Mais</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quem Sou Section -->
+    <section id="quem-sou" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2 relative">
+                    <div class="absolute -top-10 -left-10 w-64 h-64 bg-indigo-100 rounded-full blur-3xl opacity-50"></div>
+                    <img src="img/images (1).jpeg" alt="Mayesh Dasa" class="relative z-10 rounded-2xl shadow-2xl w-full max-w-md mx-auto transform hover:rotate-1 transition-transform">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-indigo-900 mb-6">Quem Sou</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        Olá, eu sou Mayesh Dasa. Minha jornada no Yoga começou com a busca por paz interior e equilíbrio em um mundo acelerado. Hoje, dedico minha vida a compartilhar essa prática milenar de uma forma moderna, vibrante e acessível a todos.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Acredito que o Yoga é para todos, independentemente da idade ou condição física. Meu foco é proporcionar uma experiência transformadora que vá além do tapete.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-4 bg-indigo-50 rounded-xl border border-indigo-100">
+                            <span class="block text-2xl font-bold text-indigo-600">10+</span>
+                            <span class="text-slate-500">Anos de Experiência</span>
+                        </div>
+                        <div class="p-4 bg-indigo-50 rounded-xl border border-indigo-100">
+                            <span class="block text-2xl font-bold text-indigo-600">500+</span>
+                            <span class="text-slate-500">Alunos Impactados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios do Yoga Section -->
+    <section id="beneficios" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-indigo-900 mb-4">Benefícios do Yoga</h2>
+            <p class="text-lg text-slate-600 mb-16 max-w-2xl mx-auto">
+                Mais que uma atividade física, um estilo de vida que transforma sua saúde integral.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Beneficio 1 -->
+                <div class="group p-8 bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all border border-slate-100 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-4">Saúde Mental</h3>
+                    <p class="text-slate-600">Redução significativa do estresse, ansiedade e melhoria na qualidade do sono.</p>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="group p-8 bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all border border-slate-100 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-4">Flexibilidade e Força</h3>
+                    <p class="text-slate-600">Fortalecimento muscular progressivo e aumento da flexibilidade articular.</p>
+                </div>
+
+                <!-- Beneficio 3 -->
+                <div class="group p-8 bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all border border-slate-100 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-4">Foco e Clareza</h3>
+                    <p class="text-slate-600">Melhoria na concentração e tomada de decisões através da meditação ativa.</p>
+                </div>
+            </div>
+
+            <!-- More images from project -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="img/images (2).jpeg" alt="Yoga Pose 1" class="rounded-xl shadow-md h-48 w-full object-cover hover:scale-105 transition-transform">
+                <img src="img/images (3).jpeg" alt="Yoga Pose 2" class="rounded-xl shadow-md h-48 w-full object-cover hover:scale-105 transition-transform">
+                <img src="img/download.jpeg" alt="Yoga Pose 3" class="rounded-xl shadow-md h-48 w-full object-cover hover:scale-105 transition-transform">
+                <img src="img/download (1).jpeg" alt="Yoga Pose 4" class="rounded-xl shadow-md h-48 w-full object-cover hover:scale-105 transition-transform">
+            </div>
+        </div>
+    </section>
+
+    <!-- Aula Experimental Section -->
+    <section id="aula-experimental" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-indigo-900 opacity-90"></div>
+            <img src="img/images.jpeg" alt="Yoga Class" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="max-w-3xl mx-auto bg-white/10 backdrop-blur-lg p-12 rounded-3xl border border-white/20 shadow-2xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Pronto para começar?</h2>
+                <p class="text-xl text-indigo-100 mb-10 leading-relaxed">
+                    Agende sua primeira aula experimental gratuita e sinta os benefícios imediatos da nossa prática vibrante.
+                </p>
+                
+                <form class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                    <input type="email" placeholder="Seu melhor e-mail" class="w-full md:w-auto flex-grow px-6 py-4 rounded-full bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-lg" required>
+                    <button type="submit" class="w-full md:w-auto bg-orange-500 text-white px-10 py-4 rounded-full font-bold hover:bg-orange-600 transition-all transform hover:scale-105 shadow-xl">Quero Participar</button>
+                </form>
+                
+                <p class="mt-6 text-indigo-200 text-sm italic">
+                    *Vagas limitadas para novas turmas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-950 text-white py-12 border-t border-indigo-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center space-x-3">
+                    <img src="img/logo.jpeg" alt="Logo" class="h-10 w-10 rounded-full object-cover">
+                    <span class="text-xl font-bold">Mayesh Dasa</span>
+                </div>
+                
+                <div class="flex space-x-6 text-indigo-300">
+                    <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-white transition-colors">YouTube</a>
+                    <a href="#" class="hover:text-white transition-colors">WhatsApp</a>
+                </div>
+                
+                <p class="text-indigo-400 text-sm">
+                    &copy; 2026 Mayesh Dasa Yoga. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll adjustment for fixed navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-lg');
+                nav.classList.remove('glass');
+            } else {
+                nav.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-lg');
+                nav.classList.add('glass');
+            }
+        });
+    </script>
+</body>
+</html>
